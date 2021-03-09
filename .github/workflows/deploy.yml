@@ -29,5 +29,5 @@ jobs:
           git config --global user.password ${{ secrets.GITHUB_TOKEN }}
           git config --global user.email 18407784+jeacom25b@users.noreply.github.com
 
-          mkdocs gh-deploy
+          mkdocs gh-deploy --clean --verbose --force
         shell: bash
