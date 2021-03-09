@@ -22,6 +22,7 @@ jobs:
       
       - name: deploy
         run: |
-          git config user.name ${{ env.GITHUB_ACTOR }}
-          git config user.password ${{ env.GITHUB_TOKEN }}
+          git config user.name ${ GITHUB_ACTOR }
+          git config user.password ${ GITHUB_TOKEN }
           mkdocs gh-deploy
+        shell: bash
