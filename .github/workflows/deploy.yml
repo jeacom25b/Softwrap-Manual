@@ -1,5 +1,5 @@
 
-name: Set
+name: Deploy
 on:
   push:
     branches: [ manual-mkdocs ]
