@@ -2,6 +2,5 @@ site_name: Softwrap Manual
 
 nav:
     - Home: index.md
-    - Tutorials: Tutorials.md
 
 theme: readthedocs
