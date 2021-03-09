@@ -1,4 +1,4 @@
-## Welcome to the Softwrap-Manual
+# Welcome to the Softwrap-Manual
 
 Welcome to this unfinished page, this manual is currently under construction.
 
@@ -21,9 +21,8 @@ Softwrap is an addon that helps with transferring topologies inside blender. As 
   * [Pins in a nutshell](#Pins-in-a-nutshell)
 * [Troubleshooting](#Troubleshooting)
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
 
-## Installation
+# Installation
 
 SoftWrap is currently compatible with blender 2.8 and for windows only but that may change in the future.
 
@@ -50,20 +49,18 @@ This addon should come in a zip file form and Installing addons in blender is qu
 [Back to manual contents](#manual-contents)
 
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
 
-## Tutorials
+# Tutorials
 
 These tutorials aim at giving a general introduction to how this addon works but not how you should go about in exact steps, play with it like a toy and use the tool the way you want, not the way somebody told you to use (**Unless it's a dangerous tool like a drill, in this case be careful**).
 
-## Getting started: head topology transference
+# Getting started: head topology transference
 
 Todo.
 
 [Back to manual contents](#manual-contents)
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
-## Fixing shapes on the fly
+# Fixing shapes on the fly
 
 Sometimes when the models are not very similar or there's an element that causes problems (often ears), the smapping might not converge to the right place, in those cases, you have to modify the basemesh to fit the target better, this can be done easily in ``sculpt mode``.
 
@@ -85,7 +82,6 @@ You dont need to stop the simulation, SoftWrap automatically pause if you switch
 
 [Back to manual contents](#manual-contents)
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
 ## Settings
 
 Todo.
@@ -96,25 +92,21 @@ Todo.
 
 [Back to manual contents](#manual-contents)
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
 ## Interaction
 
 Todo.
 
 [Back to manual contents](#manual-contents)
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
 ## Dynamics
 Todo.
 
 [Back to manual contents](#manual-contents)
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
 ## Pins in a nutshell
 Todo.
 
 [Back to manual contents](#manual-contents)
 
-![boundary-aligned-remesh-used-to-make-cool-triangle-pattern-as-sepparator-nothing-related-to-the-manual-its-just-a-bunch-of-triangles-to-split-the-sections](img/separator.png)
 ## Troubleshooting
 Todo.
