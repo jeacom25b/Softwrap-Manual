@@ -1,0 +1,27 @@
+
+name: Set
+on:
+  push:
+    branches: [ manual-mkdocs ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.1
+        with:
+          python-version: 3.9
+
+      - name: mkdocs install
+        run: python -m pip install mkdocs
+      
+      - name: deploy
+        run: |
+          git config user.name ${{ env.GITHUB_ACTOR }}
+          git config user.password ${{ env.GITHUB_TOKEN }}
+          mkdocs gh-deploy
