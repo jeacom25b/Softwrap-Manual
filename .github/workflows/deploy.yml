@@ -26,7 +26,7 @@ jobs:
 
       - name: deploy
         run: |
-          git config --global user.name jeacom25b
+          git config --global user.name Jeacom25b
           git config --global user.password ${{ secrets.GITHUB_TOKEN }}
           git config --global user.email 18407784+jeacom25b@users.noreply.github.com
 
