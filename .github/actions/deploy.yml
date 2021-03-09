@@ -1,0 +1,42 @@
+
+name: Deploy
+on:
+  push:
+    branches: [ manual-mkdocs ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.1
+        with:
+          python-version: 3.9
+
+      - name: mkdocs install
+        run: python -m pip install mkdocs
+
+      - name: deploy
+        run: |
+          git config user.name ${{ env.GITHUB_ACTOR }}
+          git config user.password ${{ secrets.GITHUB_TOKEN }}
+          git config user.email 18407784+jeacom25b@users.noreply.github.com
+
+          mkdocs gh-deploy
+        shell: bash
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
