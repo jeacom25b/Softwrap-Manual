@@ -25,11 +25,9 @@ jobs:
 
       - name: deploy
         run: |
-          git config user.name Jeacom25b
-          git config user.password ${{ secrets.GITHUB_TOKEN }}
-          git config user.email 18407784+jeacom25b@users.noreply.github.com
-          git pull origin manual-mkdocs
-          git push origin manual-mkdocs
+          git config --global user.name Jeacom25b
+          git config --global user.password ${{ secrets.GITHUB_TOKEN }}
+          git config --global user.email 18407784+jeacom25b@users.noreply.github.com
 
           mkdocs gh-deploy
         shell: bash
