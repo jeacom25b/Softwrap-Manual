@@ -2,12 +2,13 @@
 name: Deploy
 on:
   push:
-    branches: [ manual-mkdocs ]
+    branches:
+      - 'manual-mkdocs'
 
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +26,7 @@ jobs:
 
       - name: deploy
         run: |
-          git config --global user.name Jeacom25b
+          git config --global user.name ${{ env.GITHUB_ACTOR }}
           git config --global user.password ${{ secrets.GITHUB_TOKEN }}
           git config --global user.email 18407784+jeacom25b@users.noreply.github.com
 
