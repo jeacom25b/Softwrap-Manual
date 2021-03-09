@@ -7,21 +7,6 @@ Softwrap is an addon that helps with transferring topologies inside blender. As 
 
 ![woosh!](img/venom.gif)
 
-
-<a name="contents"></a>
-## Manual contents
-* [Installation](#Installation)
-* [Tutorials](#Tutorials).
-  * [Getting started: head topology transference.](Getting-started-head-topology-transference)
-  * [Fixing shapes on the fly](#Fixing-shapes-on-the-fly)
-* [Settings](#Settings):
-  * [Source and target](#Source-and-target)
-  * [Interaction](#Interaction)
-  * [Dynamics](#Dynamics)
-  * [Pins in a nutshell](#Pins-in-a-nutshell)
-* [Troubleshooting](#Troubleshooting)
-
-
 # Installation
 
 SoftWrap is currently compatible with blender 2.8 and for windows only but that may change in the future.
