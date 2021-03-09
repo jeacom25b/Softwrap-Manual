@@ -1,4 +1,4 @@
-# Welcome to the Softwrap-Manual
+# Welcome to the Softwrap Manual
 
 Welcome to this unfinished page, this manual is currently under construction.
 
