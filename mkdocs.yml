@@ -2,7 +2,7 @@ site_name: Softwrap Manual
 
 nav:
     - Home: index.md
-        - 'Welcome to the Softwrap Manual' : "index.md"
+    - 'Getting started':
         - 'Installation' : "index.md"
 
 theme: readthedocs
