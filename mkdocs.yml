@@ -3,6 +3,9 @@ site_name: Softwrap Manual
 nav:
     - Home: index.md
     - 'Getting started':
-        - 'Installation' : "index.md"
+        - 'Instllation': 'installation.md'
+        - 'Tutorials': 'tutorials.md'
+
+
 
 theme: readthedocs
