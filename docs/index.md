@@ -1,3 +1,13 @@
+
+
+* quick links:
+
+    * [home](index.md)
+    * [quickstart](tutorials.md)
+    * [Settings reference](interface.md)
+    * [installation](installation.md)
+
+
 # Welcome to the Softwrap Manual
 
 Welcome to this unfinished page, this manual is currently under construction.

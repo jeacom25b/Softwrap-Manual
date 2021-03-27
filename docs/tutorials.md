@@ -5,7 +5,7 @@ These tutorials aim at giving a general introduction to how this addon works but
 
 with that said there are some aspects of the addon that are useful to keep in mind.    
 
-Since Softwrap uses a heavily modified kind of softbody simulation, its not fully automatic and can misbehave so, sometimes its necessary that you manually define target points on the meshes for better alignment.
+Since Softwrap uses a heavily modified kind of softbody simulation, its not fully automatic and can misbehave, so sometimes its necessary that you manually define target points on the meshes for better alignment.
 
 !!! note "quick note"
     Just use [Shift+click] to add a pin on the mesh.
