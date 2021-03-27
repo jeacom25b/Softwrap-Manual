@@ -16,10 +16,8 @@ This addon should come in a zip file form, the name of this file may vary depend
   ![](img/addons-install.png)
 
 
-
 4. now select the zip file and hit `install add-on from file...`  
   ![](img/install-from-file.png)
-
 
 
 5. Enable it and save the preferences.  

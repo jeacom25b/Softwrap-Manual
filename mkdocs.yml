@@ -5,7 +5,13 @@ nav:
     - 'Getting started':
         - 'Instllation': 'installation.md'
         - 'Tutorials': 'tutorials.md'
+        - 'Interface': 'interface.md'
 
 
 
 theme: readthedocs
+
+
+markdown_extensions:
+    - admonition
+    - attr_list
