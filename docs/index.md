@@ -27,4 +27,4 @@ with that said Softwrap can save you time from having to retopo your models from
 
 
 
-![woosh!](img/venom.gif)
+<video autoplay loop muted playsinline src="./img/pause.mp4" style='max-width:100%'></video>

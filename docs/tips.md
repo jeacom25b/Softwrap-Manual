@@ -9,7 +9,7 @@ to do it just split the viewport in two, enable lock camera to view in both and 
 in the other select the camera and the target mesh and also switch to local view. now just switch to camera view in both viewports to have a synced view of
 both objects while not having one obstruct the view of the other.
 
-<video autoplay loop muted playsinline src="/img/split_viewport.mp4" style='max-width:100%'></video>
+<video autoplay loop muted playsinline src="../img/split_viewport.mp4" style='max-width:100%'></video>
 
 
 <br>
@@ -21,7 +21,7 @@ both objects while not having one obstruct the view of the other.
 You can pause the simulation and still add pins, this is useful if you want a workflow where you first mark feature points and then start the wrapping.
 You can also pause it even before clicking start.
 
-<video autoplay loop muted playsinline src="/img/pause.mp4" style='max-width:100%'></video>
+<video autoplay loop muted playsinline src="../img/pause.mp4" style='max-width:100%'></video>
 
 <br>
 <br>
@@ -31,4 +31,4 @@ You can also pause it even before clicking start.
 
 Pins have an area of influence, you can scale them to change it.
 ![](img/a.mp4)
-<video autoplay loop muted playsinline src="/img/pin_scale.mp4" style='max-width:100%'></video>
+<video autoplay loop muted playsinline src="../img/pin_scale.mp4" style='max-width:100%'></video>
