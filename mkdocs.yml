@@ -5,6 +5,7 @@ nav:
     - 'Getting started':
         - 'Instllation': 'installation.md'
         - 'Tutorials': 'tutorials.md'
+        - 'Tips and tricks': 'tips.md'
         - 'Interface': 'interface.md'
 
 
