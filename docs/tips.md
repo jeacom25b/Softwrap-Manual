@@ -9,8 +9,9 @@ to do it just split the viewport in two, enable lock camera to view in both and 
 in the other select the camera and the target mesh and also switch to local view. now just switch to camera view in both viewports to have a synced view of
 both objects while not having one obstruct the view of the other.
 
-<video autoplay loop muted playsinline src="../img/split_viewport.mp4" style='max-width:100%'></video>
-
+<a href="../img/split_viewport.mp4" target="_blank" rel="noopener noreferrer">
+    <video autoplay loop muted playsinline src="../img/split_viewport.mp4" style='max-width:100%'></video>
+</a>
 
 <br>
 <br>
