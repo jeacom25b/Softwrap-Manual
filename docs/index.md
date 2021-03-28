@@ -10,7 +10,6 @@
 
 # Welcome to the Softwrap Manual
 
-Welcome to this unfinished page, this manual is currently under construction.
 
 Softwrap is an addon that helps with re-utilizing mesh topology inside blender. As the name states SoftWrap uses softbody simulation to wrap a mesh on another.
 
