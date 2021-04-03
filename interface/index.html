@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Interface - Softwrap Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Interface";
+    var mkdocs_page_input_path = "interface.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Softwrap Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tutorials/">Tutorials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Tips and tricks</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Interface</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#interaction-panel">Interaction panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#initialization-panel">Initialization panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#symmetry-panel">Symmetry panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stiffness-panel">Stiffness panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#smoothing-panel">Smoothing panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#snapping-panel">Snapping panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#plasticity-panel">Plasticity panel.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#performance-panel">Performance panel</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Softwrap Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting started &raquo;</li>
+        
+      
+    
+    <li>Interface</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="interface">Interface</h1>
+<p>Here you find a description of each option in the addon.
+Usually you need to tweak them for best results when wrapping complex models.</p>
+<p>Or maybe you want a simple <a href="../tutorials/">quickstart</a>.</p>
+<p><img alt="" src="../img/panels.png" /></p>
+<h3 id="interaction-panel">Interaction panel</h3>
+<ul>
+<li><strong>Interaction</strong> enables the mouse interaction with the simulation, when disabled, you cant grab the mesh or create pins.</li>
+<li><strong>Pause</strong> Halts the simulation temporarily.</li>
+<li><strong>Left Mouse / Right Mouse</strong> which mouse button to use for grabbing the mesh and creating pins</li>
+<li><strong>Mouse Grab size</strong> The area of influence when you grab the mesh using the mouse   </li>
+</ul>
+<h3 id="initialization-panel">Initialization panel</h3>
+<ul>
+<li>
+<p><strong>Start</strong> Starts the simulation as a modal operator, while the simulation is running this button changes to "Stop"
+    you can also stop the simulation by pressing ESC</p>
+</li>
+<li>
+<p><strong>Apply</strong> removes the shapekey created by softwrap and applies its shape as default.</p>
+</li>
+<li><strong>Reset</strong> removes the shapekey but dont apply the shape, essentially reverting the original shapekey</li>
+<li><strong>Delete Pins</strong> removes all pins used by the selected source mesh</li>
+<li><strong>Bending Distance</strong> the distance in edges for bending springs to be created, the higher this value the less flexible the simulation gets.</li>
+</ul>
+<h3 id="symmetry-panel">Symmetry panel</h3>
+<ul>
+<li><strong>Mirror</strong> which axis to mirror the source mesh, the object origin is used as mirror center</li>
+</ul>
+<h3 id="stiffness-panel">Stiffness panel</h3>
+<ul>
+<li>
+<p><strong>Structural Stiffness</strong>
+    the Stiffness of the direct links between vertices, the higher the value, the less stretchy the simulation is.</p>
+</li>
+<li>
+<p><strong>Shear Stiffness</strong><br />
+    Resistance to a kind of force that distorts polygons known as <a href="https://en.wikipedia.org/wiki/Shear_stress">Shear</a>.
+    <img alt="" src="../img/shear_force.png" /></p>
+</li>
+<li>
+<p><strong>Bending Stiffness</strong> <br />
+    Resistance to foces that bend the mesh.</p>
+</li>
+<li>
+<p><strong>Damping</strong>  <br />
+    Dampen the simulation to prevent stability issues, higher values makes the mesh move slower.</p>
+</li>
+</ul>
+<h3 id="smoothing-panel">Smoothing panel</h3>
+<ul>
+<li><strong>Smoothing</strong> Plain smoothing applied the mesh each frame, similar to blender's smooth modifier but dynamic.</li>
+<li><strong>Quad Smooth</strong>
+    A special kind of smoothing that applies forces to restore the original shape of the quads.</li>
+<li><strong>Topologic Smoothing</strong><br />
+  A smoothing mode that is less aggressive and doesn't shrink the mesh, it uses the edge
+   flow as guidance for its smoothing and applies forces to restore the volume.</li>
+</ul>
+<h3 id="snapping-panel">Snapping panel</h3>
+<ul>
+<li><strong>Snapping Force</strong> Applies a force to attract the source mesh to the target mesh.</li>
+<li><strong>Snapping group</strong> Vertex group to mask which vertices should be affected by snapping force.</li>
+<li><strong>Simulation group</strong> Vertex group to freezes the vertices.</li>
+</ul>
+<h3 id="plasticity-panel">Plasticity panel.</h3>
+<ul>
+<li><strong>Max Scaling</strong> maximum allowed plastic deformation scaling for edges.</li>
+<li><strong>Min Scaling</strong> minimum allowed plastic deformation scaling for edges.</li>
+<li><strong>Scale Plasticity</strong> how much to permanently deform the mesh after its stretched or compressed</li>
+<li><strong>Scale Restoration</strong> How much to restore the original length of the edges when its not under stress</li>
+</ul>
+<h3 id="performance-panel">Performance panel</h3>
+<ul>
+<li><strong>Simulation steps</strong> How many steps to run on each frame, this doesn't affect the movement speed but affects performance and Stiffness.</li>
+<li><strong>Snapping Quality</strong> The Quality of the snapping force.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../tips/" class="btn btn-neutral" title="Tips and tricks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../tips/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

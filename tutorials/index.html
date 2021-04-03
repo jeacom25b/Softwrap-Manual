@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Tutorials - Softwrap Manual</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Tutorials";
+    var mkdocs_page_input_path = "tutorials.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Softwrap Manual</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Tutorials</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#quick-start-topology-transference">Quick start: Topology transference</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../tips/">Tips and tricks</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interface/">Interface</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Softwrap Manual</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting started &raquo;</li>
+        
+      
+    
+    <li>Tutorials</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="tutorials">Tutorials</h1>
+<p>These tutorials aim at giving a general introduction to how this addon works but not how you should go about in exact steps, play with it, experiment and use the tool the way you want, not the way somebody told you to use.</p>
+<p>with that said there are some aspects of the addon that are useful to keep in mind.    </p>
+<p>Since Softwrap uses a heavily modified kind of softbody simulation, its not fully automatic and can misbehave, so sometimes its necessary that you manually define target points on the meshes for better alignment.</p>
+<div class="admonition note">
+<p class="admonition-title">quick note</p>
+<p>Just use [Shift+click] to add a pin on the mesh.</p>
+</div>
+<p><img alt="this is a pin" src="../img/pin.png" width="400em" /></p>
+<p>Those target points borrow the name of "Pins" from other cloth simulation tools and although they work in a similar way, they are not point-like, instead they have a target center location, and a area of influence much like blender's Grab sculpting brush or the Hook modifier.</p>
+<h2 id="quick-start-topology-transference">Quick start: Topology transference</h2>
+<H6>In this section you'll get a short introduction to how to use softwrap for a basic topology transfer.</h6>
+<p>Maybe you prefer a video.</p>
+<iframe frameborder="0" width="100%" height="400" src="https://www.youtube.com/embed/aEH9J-YlwwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><br></p>
+<H6>
+the following tutorial was made with images extracted from the very video above, so you may read it instead.
+</h6>
+
+<p>First we need to clarify what Source and Target meshes are since it tends to be confusing sometimes.    </p>
+<p><img alt="initialization panel" src="../img/initialization.png" /></p>
+<ul>
+<li>
+<p><strong>Source mesh</strong> is the mesh that is going to be deformed, its the <em>source</em> of the topology</p>
+<p>Source meshes made of quads are the most common and recommended, either made during a previous manual retopology session or generated by a remesher or obtained from somewhere else such as a basemeshes pack.</p>
+<p>!!! triangles "Triangles?"
+      although softwrap do work on triangle based source meshes, most of its features are designed with quad meshes in mind.
+      but dont worry about that too much unless you wrap triangle meshes very often.<br />
+      also its okay to have a mixed quad/triangle mesh.</p>
+</li>
+<li>
+<p><strong>Target mesh</strong> is the final shape desired or <em>target</em> shape</p>
+<p>usually a sculpt or a 3D scan composed of triangles or messy topology though it can be other quad mesh too.</p>
+<p>keep in mind that if your source mesh us a 3D scan it might be useful to do a pre-remeshing on it before using softwrap since 3D scanned meshes usually contain malformed triangles and noisy normals that can confuse the snapping algorithm, voxel-remeshing it will get rid of those issues.    </p>
+</li>
+</ul>
+<p>Okay, lets retopo something now!</p>
+<p>you can <a href="../files/tut1.blend">download</a> the file used in the tutorial.</p>
+<p>you should have in your file both the sculpt/scan you want to retopo and a basemesh with the topology you want to use.
+Those are the ones used in this tutorial.</p>
+<p><img alt="" src="../img/tut1/img1.png" /></p>
+<p>One of the meshes will be our source and the other our target so lets set up that in the initialization panel.</p>
+<p><img alt="" src="../img/tut1/img2.png" /></p>
+<p>But before we start the simulation, its useful, though not absolutelly necessary to pre-align both models.    </p>
+<div class="admonition symmetry">
+<p class="admonition-title">important</p>
+<p>if you are going to use symmetry in the simulation, its extremelly important that both meshes are aligned at least on the symmetry axis.    </p>
+</div>
+<p><img alt="" src="../img/tut1/img3.png" /></p>
+<p>Now just click the Start button to begin the simulation : <img alt="" src="../img/tut1/start.png" /></p>
+<p>Now the simulation is running but not snapping to anything, it resembles a cloth and you can click and drag with the mouse to manipulate it.<br />
+<img alt="" src="../img/tut1/img4.png" /></p>
+<p>Lets enable X-mirror in the symmetry panel so that both sides are affected in the same way, this allows us to adjust only one side and the other will be mirrored accordingly.<br />
+<img alt="" src="../img/tut1/img5.png" /></p>
+<p><img alt="" src="../img/tut1/img6.png" /></p>
+<p>now increase the <code>Snapping Strength</code> slider to a high value such as 1.0, this will make the source mesh be "attracted" to the target mesh and stick to its surface.
+Much like the shwrinkwrap modifier but dynamically.    </p>
+<p>you may also want to enable <code>In Front</code> and <code>Wire</code> in the initialization panel to see better whats happening with the source mesh.    </p>
+<p>But when you do that, you may encounter some weird things happening with the mesh.
+Don't worry though, its easy to fix.<br />
+<img alt="" src="../img/tut1/img7.png" /></p>
+<p>this happens when the mesh has some inward geometry that is not present in the target mesh, usually structures known as mouth-bags that are very common in basemeshes.<br />
+<img alt="" src="../img/tut1/img9.png" /></p>
+<p>to fix it we must prevent this geometry from snapping to the target mesh since there's no matching structure in it, for that just select and assign all the geometry you don't want to snap to a vertex group
+and select this vertex group in the <code>Snapping Group</code> drop-down in the snapping panel.<br />
+<img alt="" src="../img/tut1/img10.png" /> <img alt="" src="../img/tut1/img11.png" /></p>
+<p>after that, the geometry selected in the vertex group will not snap anymore to anything but will still move dynamically so it can still be adjusted freely.
+If you want it to be completely frozen, also select the same vertex group in the <code>Simulation Group</code> dropdown.<br />
+<img alt="" src="../img/tut1/img12.png" /></p>
+<p>As you may notice, this is still not a very good retopo, it needs to be adjusted.<br />
+Due to the dynamic nature of the simulation, we cant just grab it with the mouse, release and expect it to stay in place forever, fortunately we can add pins!  </p>
+<p>By default you can add them with <code>shift + click</code>, it creates a empty that locks a region of the mesh in place, by moving the pin with the <code>G</code> key you also move the mesh around and
+with the <code>S</code> key you can adjust the area of influence of the pin.</p>
+<p>to make the work easier, Its a good idea to enable blender's face snapping mode, this makes the pin snap to the surface of the target mesh which makes it much easier to position it on the desired place.<br />
+<img alt="" src="../img/tut1/img14.png" />
+<img alt="" src="../img/tut1/img13.png" /></p>
+<p>Now its just a matter of adding as many pins as you wish and stop the simulation when you are satisfied with the results.</p>
+<p><img alt="" src="../img/tut1/img15.png" /></p>
+<p>After you are done, you can delete all the pins, and click, apply to make the shape permanent.<br />
+you may also reset the original shape by clicking the <code>reset</code> button.</p>
+<p>also as a side note, SoftWrap creates a shape key so you may use it to morph the mesh between the original shape and the new shape.<br />
+<img alt="" src="../img/tut1/img16.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tips/" class="btn btn-neutral float-right" title="Tips and tricks">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../tips/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
